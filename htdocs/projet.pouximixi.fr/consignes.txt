@@ -1,0 +1,206 @@
+BTS SIO | Applications Web • Projet supervisé 1
+BTS SERVICES INFORMATIQUES AUX ORGANISATIONS
+APPLICATIONS WEB • PROJET SUPERVISÉ
+I. OBJECTIF GLOBAL DU PROJET
+Faire concevoir et développer une application web simple répondant à une demande client simulée, en
+abordant :
+▪ Les concepts réseau (serveur, client, IP, DNS, port, requêtes HTTP, etc.)
+▪ Les bases de données (modélisation, SQL, requêtes, intégration)
+▪ Le développement web (frontend / backend)
+▪ La mise en production (serveur web, hébergement local)
+▪ La gestion de projet (analyse du besoin, maquette, planification, répartition des tâches)
+II. SCÉNARIO
+1. Présentation du client
+Nom de l’organisation : Association Fit&Fun
+Type : Association sportive loi 1901
+Adresse : 12 rue Vaillant, 21000 Dijon
+Contact principal : Mme Julie Fort
+Présidente de l’association
+julie.fort@fitandfun-association.fr
+06 12 34 56 78
+2. Contexte
+Fit&Fun est une association sportive locale proposant différentes activités (fitness, zumba, renforcement
+musculaire, yoga…).
+L’association compte environ 120 adhérents et 4 animateurs.
+La gestion se fait aujourd’hui sur papier et par e-mail, ce qui devient difficile à maintenir : inscriptions,
+plannings, cotisations, etc.
+Julie souhaite donc faire développer une petite application web qui permettra :
+▪ aux adhérents de s’inscrire aux activités et consulter le planning,
+▪ aux animateurs d’ajouter ou modifier des séances,
+▪ au bureau de l’association de gérer les adhérents.
+BTS SIO | Applications Web • Projet supervisé 2
+3. Objectifs du projet
+Créer une application web simple, accessible depuis ordinateur ou smartphone, permettant :
+▪ La gestion des adhérents
+o Enregistrement des adhérents (nom, prénom, e-mail, activité choisie, cotisation)
+o Consultation / modification / suppression d’un adhérent
+▪ La gestion des activités
+o Liste des activités proposées (nom, jour, animateur)
+o Ajout / suppression / modification d’une activité
+▪ Le planning
+o Visualisation des créneaux d’activités
+o (Optionnel) affichage sous forme de calendrier
+▪ L’espace public
+o Page d’accueil présentant l’association
+o Formulaire d’inscription en ligne (envoi au bureau)
+4. Utilisateurs de l’application
+Profil Droits / Attentes principales
+Adhérent Consulter le planning, s’inscrire à une activité
+Animateur Modifier les séances qu’il encadre
+Membre du bureau Gérer les adhérents et les activités
+Visiteur public Découvrir l’association, envoyer une demande d’inscription
+5. Contraintes et attentes techniques
+▪ L’application doit être hébergée sur un serveur local de l’association
+▪ Elle doit utiliser une base de données relationnelle (MySQL, MariaDB ou PostgreSQL)
+▪ Le site doit être accessible via un navigateur web sur le réseau local (ex. http://fitandfun.local)
+▪ L’interface doit être claire et intuitive, sans design avancé
+6. Éléments fournis par le client
+▪ Liste des activités actuelles :
+Activité Animateur Jour Heure
+Fitness Julie Fort Lundi 18h00
+Zumba Rachelle Leroy Mardi 19h00
+Yoga Caroline Petit Jeudi 18h30
+Renforcement musculaire Mathilde Rey Vendredi 19h00
+▪ Exemples d’adhérents :
+Nom Prénom E-mail Activité
+Dupont Bertille bertille.dupont@gmail.com Yoga
+Bernard Lucas lucas.bernard@outlook.fr Fitness
+Roux Alexandre alexandre.roux@yahoo.fr Zumba
+BTS SIO | Applications Web • Projet supervisé 3
+7. Attentes de rendu
+▪ Une application web fonctionnelle
+▪ Un schéma réseau expliquant où sont hébergés les éléments
+▪ Le modèle de données
+▪ Une maquette de l’interface
+▪ Le code source documenté sur un compte GitHub
+▪ Un cahier des charges
+▪ Une courte présentation (support type diaporama) pour « vendre » le projet au client
+III. TRAME DE CAHIER DES CHARGES À COMPLÉTER
+1. Présentation générale
+Client : Association Fit&Fun
+Contact : Julie Fort – Présidente
+Adresse : 12 rue Vaillant, 21000 Dijon
+E-mail : julie.fort@fitandfun-association.fr
+Contexte :
+L’association Fit&Fun organise plusieurs activités sportives (fitness, zumba, yoga, etc.) et souhaite
+améliorer la gestion de ses adhérents et plannings.
+Actuellement, tout est géré sur papier ou par e-mail, ce qui entraîne de nombreuses erreurs et pertes de
+temps.
+2. Objectifs du projet
+Créer une application web locale permettant à l’association :
+▪ de gérer les adhérents (ajout, suppression, modification, consultation)
+▪ de gérer les activités et plannings
+▪ de permettre aux adhérents de s’inscrire en ligne
+▪ de présenter l’association au public via une page d’accueil
+À compléter :
+ Quelles autres fonctionnalités semblent nécessaires ?
+ Quelles informations devront être stockées en base de données ?
+ Quelles contraintes techniques faudra-t-il respecter ?
+BTS SIO | Applications Web • Projet supervisé 4
+3. Utilisateurs cibles
+Profil Description Droits
+Visiteur Toute personne consultant le site Consulter la page d’accueil, remplir le
+formulaire d’inscription
+Adhérent Personne inscrite à une activité Consulter son activité et le planning
+Membre du bureau Responsable de l’association Gérer les adhérents, activités et plannings
+À compléter :
+ Quels écrans/interfaces sont nécessaires pour chaque profil ?
+ Quelles données chaque profil peut-il consulter ou modifier ?
+4. Périmètre fonctionnel attendu
+Fonctionnalités minimales :
+▪ Liste et gestion des adhérents
+▪ Liste et gestion des activités
+▪ Consultation du planning
+▪ Formulaire d’inscription
+À compléter :
+ Décrire les pages prévues (titre + contenu)
+ Décrire le comportement attendu (ex : validation, messages d’erreur, etc.)
+5. Contraintes techniques
+Élément Spécification minimale Commentaire
+Serveur Hébergement local Machine virtuelle ou conteneur
+Base de données MySQL / MariaDB Accessible depuis le backend
+Langages HTML / CSS / SQL / JS / PHP
+Accès Via navigateur web Local uniquement
+Sécurité Authentification selon droits
+À compléter :
+ Décrire l’architecture réseau envisagée (schéma simple)
+ Définir les outils à utiliser pour le développement
+6. Livrables attendus
+▪ Cahier des charges complété
+▪ Schéma réseau et modèle de données
+▪ Maquette de l’application
+▪ Code source fonctionnel
+▪ Documentation utilisateur courte
+▪ Présentation finale du projet
+BTS SIO | Applications Web • Projet supervisé 5
+À compléter :
+ Définir les rôles au sein de l’équipe (chef de projet, dev, doc, etc.)
+ Planifier les étapes et délais (planning de développement)
+7. Validation
+Le projet sera validé par :
+• le fonctionnement global de l’application,
+• la cohérence du modèle de données,
+• la qualité de l’organisation et du travail en équipe,
+• et la présentation finale devant le “client”.
+IV. DES OUTILS EN VRAC
+Besoin Outil
+Schématisation « à la main » https://excalidraw.com/
+Schéma réseau https://app.diagrams.net/
+Schéma de bases de données https://www.drawdb.app/
+Schéma de bases de données https://dbdiagram.io/home
+Arborescence https://www.gloomaps.com/
+Organisation https://trello.com/
+Maquettes d’interface https://wireflow.co/
+Diagramme de Gantt https://www.onlinegantt.com/
+Maquette de site/application https://penpot.app/
+BTS SIO | Applications Web • Projet supervisé 6
+V. LA NOTATION DE VOTRE TRAVAIL
+Les grilles et barèmes suivants pourront être amenés à évoluer mais cette trame vous permet d’orienter
+votre travail.
+Critère Détails Points
+Analyse & Cahier des charges /20
+Compréhension du besoin Reformulation, identification des enjeux 4
+Identification des utilisateurs Profils, rôles, permissions 3
+Définition des fonctionnalités Liste claire, priorisation 4
+Cahier des charges complété Sections remplies, cohérence 5
+Qualité de la restitution Présentation claire, orthographe, structure 4
+Conception (Réseau + BDD + Maquettage) /20
+Schéma réseau Client/serveur, port, accès 4
+Modèle de données MCD / tables / relations cohérences 6
+Qualité du SQL prévu Types, contraintes, clés primaires/étrangères 4
+Maquette de l’interface Pages, navigation, logique 4
+Organisation & clarté Documents propres et compréhensibles 2
+Mise en place technique – Serveurs / Environnement /20
+Installation serveur web Apache / Nginx / Node fonctionnel 4
+Installation BDD MySQL / MariaDB / PostgreSQL fonctionnel 4
+Connexion serveur ↔ BDD Test réussi, drivers installés 5
+Organisation fichiers / arborescence Structure claire et cohérente 3
+Config réseau Accès local, tests ping/http 4
+Développement Backend /20
+Routes CRUD fonctionnelles Create, Read, Update, Delete 8
+Connexion à la BDD Requêtes SQL correctes, retour de données 4
+Structure du code Origanisation fichiers, commentaires 4
+Robustesse minimale Gestion erreurs / champs obligatoires 4
+Développement Frontend & UX /20
+Pages principales existantes Accueil, adhérents, activités 6
+Formulaires fonctionnels Envoi, validation, affichage, erreurs 6
+Esthétique & lisibilité Mise en page minimale propre 4
+Navigation Liens, menus, cohérence 4
+Intégration Front ↔ Backend /20
+Récupération des données Affichage dynamique 6
+Envoi des données Ajout/MAJ depuis interface 6
+Tests fonctionnels Scénarios utilisateur OK 4
+Gestion des retours Messages confirmation/erreur 4
+Travail en équipe & organisation /20
+Répartition des tâches Rôles définis, autonomie 5
+Communication Interaction, planning, entraide 4
+Gestion du projet Respect étapes / méthodes 4
+Participation individuelle Implication observable 4
+Versionning Git simple OU suivi fichiers 3
+Présentation finale & Soutenance /20
+Démo de l’application Fonctionnement réel 6
+Explication des choix techniques Architecture, outils, BDD 5
+Expression orale & clarté Structuration, vocabulaire 4
+Support (slides, livret…) Document clair et utile 3
+Gestion questions/réponses Compréhension du projet 2
++ Bonus éventuels…

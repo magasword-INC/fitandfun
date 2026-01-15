@@ -1,0 +1,28 @@
+OBJECTIF GLOBAL DU PROJETestkjhfqhhfjhesfjegf
+
+Couche	Outil	Rôle
+
+Hyperviseur	PVE (Proxmox VE)	Hôte de la machine virtuelle.
+
+Gestion	CloudPanel	Interface pour gérer Nginx, PHP, et la BDD sur la VM.
+
+
+
+Éléments	Langages	Rôle
+
+Serveur Web	Nginx	Reçoit les requêtes HTTP (l'adresse web).
+
+Backend	PHP	Traite la logique métier (CRUD : Créer/Lire/Modifier/Supprimer).
+
+Base de Données	MySQL/MariaDB	Stocke les données (Adhérents, Activités, Séances).
+
+
+
+Langages	Rôle
+
+HTML	La Structure de la page.
+
+CSS	Le Design et la mise en page.
+
+JavaScript	L'Interactivité côté navigateur.
+
